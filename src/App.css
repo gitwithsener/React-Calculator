@@ -1,0 +1,101 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#display {
+  position: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 100px;
+  background-color: cadetblue;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: digital;
+}
+
+.statement {
+  min-height: 35px;
+  text-align: end;
+  font-size: 1.5rem;
+  color: #505050;
+}
+
+.result {
+  display: flex;
+  min-height: 60px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 2.2rem;
+  color: rgb(77, 87, 97);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.calculator {
+  position: relative;
+  width: 350px;
+  border: 5px solid rgb(59, 59, 59);
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.calculator button {
+  position: relative;
+  width: 80px;
+  height: 55px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  color: antiquewhite;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.light-gray {
+  background-color: rgb(128, 128, 128);
+}
+
+.grey {
+  background-color: rgb(57, 75, 78);
+}
+
+.dark-gray {
+  background-color: #242424;
+}
+.calculator button[id='clear'] {
+  width: 160px;
+  background-color: rgb(189, 33, 64);
+}
+
+.calculator button:hover {
+  background-color: rgb(180, 86, 23);
+}
+
+.author {
+  text-align: center;
+  font-family: monospace;
+  margin-top: 15px;
+  cursor: grabbing;
+  font-weight: 200;
+  font-size: 1rem;
+}
